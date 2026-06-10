@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shikhar Yadav — Python Developer, AI/ML Engineer & Backend Developer. Portfolio showcasing AI-powered projects, certifications, and skills." />
+  <meta name="keywords" content="Shikhar Yadav, Python Developer, AI Engineer, ML Engineer, Backend Developer, Portfolio, LangChain, Flask, NLP" />
+  <meta name="author" content="Shikhar Yadav" />
+  <title>Shikhar Yadav — Python Developer · AI/ML Engineer · Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#landing" class="navbar__logo"><span>SY</span></a>
+      <ul class="navbar__links">
+        <li><a href="#landing" class="navbar__link active">Home</a></li>
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#experience" class="navbar__link">Experience</a></li>
+        <li><a href="#education" class="navbar__link">Education</a></li>
+        <li><a href="#projects" class="navbar__link">Projects</a></li>
+        <li><a href="#skills" class="navbar__link">Skills</a></li>
+        <li><a href="#certifications" class="navbar__link">Certifications</a></li>
+        <li><a href="#achievements" class="navbar__link">Achievements</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#landing" class="navbar__link">Home</a>
+    <a href="#about" class="navbar__link">About</a>
+    <a href="#experience" class="navbar__link">Experience</a>
+    <a href="#education" class="navbar__link">Education</a>
+    <a href="#projects" class="navbar__link">Projects</a>
+    <a href="#skills" class="navbar__link">Skills</a>
+    <a href="#certifications" class="navbar__link">Certifications</a>
+    <a href="#achievements" class="navbar__link">Achievements</a>
+    <a href="#contact" class="navbar__link">Contact</a>
+  </div>
+
+  <!-- ═══════════════ PAGE 1 — LANDING / HERO ═══════════════ -->
+  <section id="landing" class="hero section">
+    <div class="hero__bg"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__content">
+      <p class="hero__greeting">Hello, I'm</p>
+      <h1 class="hero__name">Shikhar Yadav</h1>
+      <div class="hero__designations">
+        <span>I'm a </span>
+        <span class="hero__typing-text typing-text"></span>
+      </div>
+      <p class="hero__intro">
+        A passionate Python Developer specialising in AI-powered applications, backend systems, and intelligent automation.
+        With hands-on experience in LangChain, Flask, NLP, and Machine Learning, I build scalable real-world solutions
+        that bridge the gap between data and decision-making. Currently pursuing my B.Tech in Computer Science (Data Science),
+        I combine academic rigour with practical project experience to deliver impactful software. Whether it's semantic
+        search pipelines, REST APIs, or AI-driven tools, I engineer with precision and purpose.
+        Let's build something intelligent together.
+      </p>
+      <div class="hero__cta">
+        <a href="#about" class="btn btn--primary">Learn More About Me</a>
+        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/shikharyadav01" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hero__social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/shikharyadavoxx/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hero__social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:shikharyadav0503@gmail.com" aria-label="Email" class="hero__social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll-indicator scroll-indicator" aria-label="Scroll to About section">
+      <div class="hero__scroll-mouse">
+      </div>
+      <span class="hero__scroll-text">Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ═══════════════ PAGE 2 — ABOUT ME ═══════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Get To Know Me</span>
+        <h2 class="section__title">About <span class="gradient-text">Me</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__image-wrapper animate">
+          <div class="about__image-frame">
+            <img src="images/image_shikhar.png" alt="Shikhar Yadav — Python Developer & AI/ML Engineer" class="about__image" />
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="about__summary animate delay-1">
+            I am a Python Developer with a strong focus on building AI-powered applications and scalable backend systems.
+            My core expertise spans <strong>LangChain, Flask, NLP, Machine Learning</strong>, and vector database technologies like <strong>FAISS</strong>,
+            which I use to craft intelligent, data-driven solutions. Currently in my final year of B.Tech in Computer Science
+            with a Data Science specialisation at <strong>Shri Shankaracharya Technical Campus</strong>, I bring a solid foundation in DSA,
+            OOPs, DBMS, and REST API design. I have successfully delivered projects ranging from multi-document LLM aggregators
+            to AI-based resume analyzers and intelligent expense trackers — each demonstrating my ability to integrate
+            cutting-edge AI APIs with robust backend engineering. I thrive at the intersection of backend development and
+            artificial intelligence, constantly pushing the boundaries of what Python-powered systems can achieve. What sets
+            me apart is my drive to solve real-world problems with clean, purposeful code.
+          </p>
+          <div class="about__cards animate delay-2">
+            <div class="about__card">
+              <div class="about__card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3 class="about__card-title">Mission</h3>
+              <p class="about__card-text">To engineer intelligent backend systems and AI applications that solve meaningful real-world problems, making advanced technology accessible and impactful.</p>
+            </div>
+            <div class="about__card">
+              <div class="about__card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </div>
+              <h3 class="about__card-title">Vision</h3>
+              <p class="about__card-text">To become a leading AI/Backend Engineer who shapes the next generation of intelligent software — building systems that learn, adapt, and deliver genuine value.</p>
+            </div>
+          </div>
+          <div class="about__buttons animate delay-3">
+            <a href="#experience" class="btn btn--outline btn--sm">Work Experience</a>
+            <a href="#education" class="btn btn--outline btn--sm">Education</a>
+            <a href="#projects" class="btn btn--outline btn--sm">Projects</a>
+            <a href="#skills" class="btn btn--outline btn--sm">Skills</a>
+            <a href="#certifications" class="btn btn--outline btn--sm">Certifications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 3 — WORK EXPERIENCE ═══════════════ -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Where I've Worked</span>
+        <h2 class="section__title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item animate delay-1">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">1 Month · Remote</span>
+            <h3 class="timeline__role">Python Intern</h3>
+            <p class="timeline__company">
+              <span class="timeline__company-name">Sensible Academy</span> · Internship
+            </p>
+            <div class="timeline__description">
+              <h4 style="color: var(--white); font-size: 0.875rem; font-weight: 600; margin: 1rem 0 0.5rem;">Key Responsibilities</h4>
+              <ul>
+                <li>Developed Python applications and automation scripts with a focus on backend logic and application development</li>
+                <li>Integrated third-party APIs and Python libraries into real-world development workflows</li>
+                <li>Debugged and optimised existing Python codebases to improve reliability and performance</li>
+                <li>Collaborated on software engineering tasks to strengthen backend development skills</li>
+              </ul>
+              <h4 style="color: var(--white); font-size: 0.875rem; font-weight: 600; margin: 1rem 0 0.5rem;">Key Achievements</h4>
+              <ul>
+                <li>Successfully delivered functional Python automation tools within a condensed 1-month timeline, demonstrating fast onboarding and execution ability</li>
+                <li>Gained hands-on exposure to production-grade development workflows, directly contributing to improved coding practices and API integration skills</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 4 — EDUCATION ═══════════════ -->
+  <section id="education" class="education section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">My Academic Journey</span>
+        <h2 class="section__title">My <span class="gradient-text">Education</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="education__grid">
+        <div class="education__card animate delay-1">
+          <div class="education__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent)"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+          </div>
+          <h3 class="education__degree">B.Tech in Computer Science (Data Science)</h3>
+          <p class="education__school">Shri Shankaracharya Technical Campus</p>
+          <div class="education__meta">
+            <span class="education__meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent)"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+              Bhilai, India
+            </span>
+            <span class="education__meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent)"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 18H5V9h14v11z"/></svg>
+              2022 – 2026
+            </span>
+            <span class="education__meta-item">Full-time</span>
+          </div>
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(218,119,86,0.1); padding: 6px 16px; border-radius: 999px; margin-bottom: 1rem;">
+            <span style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">CGPA</span>
+            <span style="font-size: 1.25rem; font-weight: 800; color: var(--accent);">7.15</span>
+          </div>
+          <div class="education__details">
+            <h4 style="color: var(--white); font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">Key Highlights</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.875rem;">
+                <span style="position: absolute; left: 0; color: var(--accent); font-weight: 700;">▸</span>
+                Specialising in Data Science with strong coursework in Machine Learning, NLP, and Data Analysis
+              </li>
+              <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.875rem;">
+                <span style="position: absolute; left: 0; color: var(--accent); font-weight: 700;">▸</span>
+                Built a solid foundation in core CS concepts: DSA, OOPs, DBMS, and REST API design
+              </li>
+              <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.875rem;">
+                <span style="position: absolute; left: 0; color: var(--accent); font-weight: 700;">▸</span>
+                Actively applied classroom knowledge to real-world AI and Python projects throughout the degree
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 5 — PROJECTS ═══════════════ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">What I've Built</span>
+        <h2 class="section__title">My <span class="gradient-text">Projects</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="projects__grid">
+
+        <!-- Project 1 -->
+        <div class="project-card animate delay-1">
+          <div class="project-card__body">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: rgba(218,119,86,0.1); color: var(--accent);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+              </div>
+              <a href="https://github.com/shikharyadav01" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); transition: color 0.3s;" aria-label="View on GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+            <span class="project-card__category">AI / NLP Application</span>
+            <h3 class="project-card__title">Cognitive Document LLM Aggregator</h3>
+            <p class="project-card__description">An AI-powered multi-document querying system that enables users to interact with multiple PDFs using natural language prompts. It uses semantic search pipelines and vector embeddings for highly accurate information retrieval across large document sets.</p>
+            <div class="tech-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">LangChain</span>
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">OpenAI API</span>
+              <span class="tech-pill">FAISS</span>
+              <span class="tech-pill">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card animate delay-2">
+          <div class="project-card__body">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: rgba(218,119,86,0.1); color: var(--accent);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+              </div>
+              <a href="https://github.com/shikharyadav01" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); transition: color 0.3s;" aria-label="View on GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+            <span class="project-card__category">Full-Stack AI Web Application</span>
+            <h3 class="project-card__title">AI-Powered Expense Tracker</h3>
+            <p class="project-card__description">An intelligent expense management system that combines AI-driven budgeting insights with automated spending analysis. Built on a Flask REST API backend with SQLite, it leverages Google Gemini and ML models for personalised financial recommendations.</p>
+            <div class="tech-pills">
+              <span class="tech-pill">Flask</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">SQLAlchemy</span>
+              <span class="tech-pill">Google Gemini API</span>
+              <span class="tech-pill">Scikit-learn</span>
+              <span class="tech-pill">REST API</span>
+              <span class="tech-pill">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card animate delay-3">
+          <div class="project-card__body">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: rgba(218,119,86,0.1); color: var(--accent);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L18.5 9H13z"/></svg>
+              </div>
+              <a href="https://github.com/shikharyadav01" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); transition: color 0.3s;" aria-label="View on GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+            <span class="project-card__category">NLP / Backend Tool</span>
+            <h3 class="project-card__title">AI-Based Resume Analyzer</h3>
+            <p class="project-card__description">An ATS-friendly resume analysis tool that evaluates resumes against job descriptions using NLP and ML techniques. It scores resumes, identifies skill gaps, and generates targeted suggestions to improve recruiter visibility.</p>
+            <div class="tech-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Flask</span>
+              <span class="tech-pill">NLP</span>
+              <span class="tech-pill">Machine Learning</span>
+              <span class="tech-pill">Keyword Extraction</span>
+              <span class="tech-pill">ATS Optimisation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 6 — SKILLS ═══════════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">What I'm Good At</span>
+        <h2 class="section__title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="skills__grid">
+
+        <!-- Programming Languages -->
+        <div class="skills__category animate delay-1">
+          <div class="skills__category-icon" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          </div>
+          <h3 class="skills__category-title">Programming Languages</h3>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Python</span><span class="skill-bar__percentage">92%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="92%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Java</span><span class="skill-bar__percentage">72%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="72%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">SQL</span><span class="skill-bar__percentage">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="80%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">JavaScript</span><span class="skill-bar__percentage">70%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="70%"></div></div></div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skills__category animate delay-2">
+          <div class="skills__category-icon" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26z"/></svg>
+          </div>
+          <h3 class="skills__category-title">Web Development & Frameworks</h3>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Flask</span><span class="skill-bar__percentage">88%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="88%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Streamlit</span><span class="skill-bar__percentage">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="85%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">HTML/CSS</span><span class="skill-bar__percentage">78%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="78%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Tailwind CSS</span><span class="skill-bar__percentage">72%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="72%"></div></div></div>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="skills__category animate delay-3">
+          <div class="skills__category-icon" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.875 6.875 0 000 9.79 7.02 7.02 0 009.88 0C18.32 15.65 19 14.08 19 12.1h2c0 2.48-.92 4.97-2.76 6.81a9.017 9.017 0 01-12.72 0 8.963 8.963 0 010-12.72 9.017 9.017 0 0112.72 0L21 3v7.12z"/></svg>
+          </div>
+          <h3 class="skills__category-title">AI / ML & Data Libraries</h3>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">LangChain</span><span class="skill-bar__percentage">87%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="87%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Scikit-learn</span><span class="skill-bar__percentage">82%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="82%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Pandas</span><span class="skill-bar__percentage">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="85%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">NumPy</span><span class="skill-bar__percentage">83%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="83%"></div></div></div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills__category animate delay-4">
+          <div class="skills__category-icon" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.59 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2z"/></svg>
+          </div>
+          <h3 class="skills__category-title">Databases & Storage</h3>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">SQLite / MySQL</span><span class="skill-bar__percentage">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="80%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">FAISS (Vector DB)</span><span class="skill-bar__percentage">82%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="82%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">SQLAlchemy</span><span class="skill-bar__percentage">78%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="78%"></div></div></div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skills__category animate delay-5">
+          <div class="skills__category-icon" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+          </div>
+          <h3 class="skills__category-title">Tools & Platforms</h3>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Git & GitHub</span><span class="skill-bar__percentage">88%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="88%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">OpenAI API</span><span class="skill-bar__percentage">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="85%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Google Gemini API</span><span class="skill-bar__percentage">83%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="83%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Postman</span><span class="skill-bar__percentage">78%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="78%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">VS Code</span><span class="skill-bar__percentage">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="90%"></div></div></div>
+        </div>
+
+        <!-- Core Concepts -->
+        <div class="skills__category animate delay-6">
+          <div class="skills__category-icon" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+          </div>
+          <h3 class="skills__category-title">Core Concepts</h3>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">REST APIs</span><span class="skill-bar__percentage">88%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="88%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">Machine Learning</span><span class="skill-bar__percentage">82%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="82%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">NLP</span><span class="skill-bar__percentage">83%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="83%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">DSA</span><span class="skill-bar__percentage">78%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="78%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">OOPs</span><span class="skill-bar__percentage">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="85%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__header"><span class="skill-bar__name">DBMS</span><span class="skill-bar__percentage">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill skill-bar-fill" data-width="80%"></div></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 7 — CERTIFICATIONS ═══════════════ -->
+  <section id="certifications" class="certifications section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Validated Knowledge</span>
+        <h2 class="section__title">My <span class="gradient-text">Certifications</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="certifications__grid">
+
+        <div class="cert-card animate delay-1">
+          <div class="cert-card__badge" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <h3 class="cert-card__title">Deloitte Data Analytics Job Simulation</h3>
+          <p class="cert-card__issuer">Deloitte (via Forage)</p>
+          <a href="certs/Deloitte  Data Analytics.pdf" target="_blank" class="cert-card__link">View Certificate</a>
+        </div>
+
+        <div class="cert-card animate delay-2">
+          <div class="cert-card__badge" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <h3 class="cert-card__title">IBM Cloud Essentials</h3>
+          <p class="cert-card__issuer">IBM</p>
+          <a href="certs/ibm cloud.pdf" target="_blank" class="cert-card__link">View Certificate</a>
+        </div>
+
+        <div class="cert-card animate delay-3">
+          <div class="cert-card__badge" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <h3 class="cert-card__title">HackerRank SQL (Intermediate)</h3>
+          <p class="cert-card__issuer">HackerRank</p>
+          <a href="certs/sql_intermediate certificate.pdf" target="_blank" class="cert-card__link">View Certificate</a>
+        </div>
+
+        <div class="cert-card animate delay-4">
+          <div class="cert-card__badge" style="color: var(--accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <h3 class="cert-card__title">ML with Python</h3>
+          <p class="cert-card__issuer">Certification</p>
+          <a href="certs/ML with python.pdf" target="_blank" class="cert-card__link">View Certificate</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 8 — ACHIEVEMENTS ═══════════════ -->
+  <section id="achievements" class="achievements section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Milestones & Awards</span>
+        <h2 class="section__title">Achievements & <span class="gradient-text">Recognition</span></h2>
+        <div class="section__divider"></div>
+        <p class="section__description">Milestones that reflect my dedication to learning, building, and competing in the world of technology.</p>
+      </div>
+
+      <div class="achievements__stats animate delay-1">
+        <div class="stat-counter">
+          <div class="stat-counter__number stat-number" data-target="1">0</div>
+          <div class="stat-counter__label">Years Experience</div>
+        </div>
+        <div class="stat-counter">
+          <div class="stat-counter__number stat-number" data-target="3">0</div>
+          <div class="stat-counter__label">Certifications</div>
+        </div>
+        <div class="stat-counter">
+          <div class="stat-counter__number stat-number" data-target="3">0</div>
+          <div class="stat-counter__label">Projects</div>
+        </div>
+        <div class="stat-counter">
+          <div class="stat-counter__number stat-number" data-target="1">0</div>
+          <div class="stat-counter__label">Award</div>
+        </div>
+      </div>
+
+      <div class="achievements__grid">
+
+        <div class="achievement-card animate delay-2">
+          <div class="achievement-card__icon" style="color: var(--accent);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
+          </div>
+          <div class="achievement-card__content">
+            <span class="achievement-card__badge">Professional · 2024</span>
+            <h3 class="achievement-card__title">Smart India Hackathon 2024 — Participant</h3>
+            <p style="font-size: 0.75rem; color: var(--accent); font-weight: 500; margin-bottom: 0.5rem;">Government of India / Ministry of Education</p>
+            <p class="achievement-card__description">Selected and participated in Smart India Hackathon 2024, one of India's largest national-level hackathons, competing to solve real-world problem statements with innovative technology solutions.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card animate delay-3">
+          <div class="achievement-card__icon" style="color: var(--accent);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          </div>
+          <div class="achievement-card__content">
+            <span class="achievement-card__badge">Professional · Ongoing</span>
+            <h3 class="achievement-card__title">Competitive Coding — LeetCode & HackerRank</h3>
+            <p style="font-size: 0.75rem; color: var(--accent); font-weight: 500; margin-bottom: 0.5rem;">LeetCode / HackerRank</p>
+            <p class="achievement-card__description">Consistently solved algorithmic and data structure problems across LeetCode and HackerRank platforms, sharpening problem-solving skills and competitive programming ability.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card animate delay-4">
+          <div class="achievement-card__icon" style="color: var(--accent);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg>
+          </div>
+          <div class="achievement-card__content">
+            <span class="achievement-card__badge">Professional · 2023–2025</span>
+            <h3 class="achievement-card__title">AI & Python Real-World Project Portfolio</h3>
+            <p style="font-size: 0.75rem; color: var(--accent); font-weight: 500; margin-bottom: 0.5rem;">Self-Initiated</p>
+            <p class="achievement-card__description">Independently designed and shipped multiple AI and Python-based projects — including an LLM document aggregator, AI expense tracker, and resume analyzer — demonstrating consistent initiative beyond academic requirements.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PAGE 9 — CONTACT ═══════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Get In Touch</span>
+        <h2 class="section__title">Let's Build Something <span class="gradient-text">Intelligent Together</span></h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="contact__grid">
+
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact__form animate delay-1">
+          <div class="form-group">
+            <input type="text" id="contact-name" name="name" class="form-group__input" placeholder=" " required autocomplete="name" />
+            <label for="contact-name" class="form-group__label">Full Name</label>
+            <div class="form-group__underline"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="contact-email" name="email" class="form-group__input" placeholder=" " required autocomplete="email" />
+            <label for="contact-email" class="form-group__label">Email Address</label>
+            <div class="form-group__underline"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="contact-subject" name="subject" class="form-group__input" placeholder=" " required />
+            <label for="contact-subject" class="form-group__label">Subject</label>
+            <div class="form-group__underline"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="contact-message" name="message" rows="5" class="form-group__textarea" placeholder=" " required></textarea>
+            <label for="contact-message" class="form-group__label">Message</label>
+            <div class="form-group__underline"></div>
+          </div>
+          <button type="submit" class="btn btn--primary contact__form-btn" id="send-message-btn">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </button>
+        </form>
+
+        <!-- Contact Info Panel -->
+        <div class="contact__info animate delay-2">
+          <h3 class="contact__info-title">Contact Information</h3>
+          <p class="contact__info-text">Feel free to reach out through any of the following channels.</p>
+          <div class="contact__info-items">
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="contact__info-label">Email</span>
+                <div class="contact__info-value"><a href="mailto:shikharyadav0503@gmail.com">shikharyadav0503@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <span class="contact__info-label">Phone</span>
+                <div class="contact__info-value"><a href="tel:+916261566779">+91 6261566779</a></div>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+              </div>
+              <div>
+                <span class="contact__info-label">Location</span>
+                <div class="contact__info-value">Korba, Chhattisgarh, India</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__info-socials">
+            <a href="https://www.linkedin.com/in/shikharyadavoxx/" target="_blank" rel="noopener noreferrer" class="contact__info-social" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/shikharyadav01" target="_blank" rel="noopener noreferrer" class="contact__info-social" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="#landing" class="footer__logo"><span>SY</span></a>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--white);">Shikhar Yadav</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); font-style: italic;">Engineering Intelligence. Building the Future, One Line at a Time.</p>
+        <div class="footer__socials">
+          <a href="https://github.com/shikharyadav01" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/shikharyadavoxx/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:shikharyadav0503@gmail.com" class="footer__social" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">&copy; 2025 Shikhar Yadav. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="footer__back-to-top back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
